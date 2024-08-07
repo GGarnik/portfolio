@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_P-bnBeA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+
+@keyframes title-1 {
+    0% {
+      opacity:0;
+      filter:blur(5px);
+      transform:translateY(100px) scale(.9)
+    }
+    to {
+      opacity:1;
+      filter:blur(0);
+      transform:translateY(0) scale(1)
+    }
+  }
+.animation-title-1 {
+  animation:title-1 .8s cubic-bezier(.4,0,.2,1);
+}
+
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.title {
+  font-size: 4rem;
+  color: white;
+  margin-top: 300px;
+}
+
+.header {
+  background: #0a0a0a;
+  position: fixed;
+  height: 80px;
+  width: 100vw;
+  margin-top: -300px;
+  border-bottom: 1px solid #242424;
+}
