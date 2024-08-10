@@ -63,21 +63,21 @@
   margin-top: 20px;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 
-@media (max-width: 1220px) {
+
+@media (max-width:1220px) {
   .container {
-    grid-template-columns: repeat(2, 1fr); /* Два столбца на экранах до 768px */
+    grid-template-columns: repeat(1, 1fr);
+    max-width:1280px
   }
 }
-
-@media (max-width: 480px) {
+@media (min-width:1280px) {
   .container {
-    grid-template-columns: 1fr; /* Один столбец на экранах до 480px */
+    max-width:1280px
   }
 }
 
